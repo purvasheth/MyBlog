@@ -79,7 +79,7 @@ Stashing acts as a lifeline when we need changes in the future. A few cases are 
 
 Congratulations on reaching the end. 🎉 To get notified about other posts in this series,
 
-<form name="collect-email" netlify>
+<form name="collect-email" method="POST" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
