@@ -73,6 +73,20 @@ Let's look at the commands in action. I urge you to try these out on a local rep
 
 Stashing acts as a lifeline when we need changes in the future. A few cases are listed :
 
-- Imagine that, to work on a feature for a project, you clone the repository and create your branch and start working. Somebody else's PR gets accepted and merged having code useful for you too. Now what? Stash your current changes, fetch the new changes from the remote, and finally apply the stashed content.
-- Another such scenario is when you forget some change on your old commit and already start working on a new one. Complete the work on the previous commit by stashing changes for later.
-- Let's suppose you are working on branch A. You commit your work and move on to making changes for another branch B. But, then realize that you forgot to switch to branch B in your excitement. Stashing will solve the problem here.
+- Imagine that, to work on a feature for a project, you clone the repository and create your branch and start working. Somebody else's PR gets accepted and merged, which has code useful for you too. Now what? Stash your current changes, fetch the new changes from the remote, and finally apply the stashed content.
+- Another such scenario is when you forget something meant for a commit and already start working on a new one. Complete the work on it by stashing changes for later.
+- Let's suppose you are working on branch A. You commit changes and move on to making changes for another branch called B. You realize later that you forgot to switch to branch B in your excitement. Stashing will solve the problem here.
+
+Congratulations on reaching the end. 🎉 To get notified about other posts in this series,
+
+<form name="collect-email" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
