@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "purva-sheth-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "My take on various topics web development",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Purva Sheth <purvashet@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/purvasheth/MyBlog/issues"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
