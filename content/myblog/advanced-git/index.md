@@ -1,30 +1,30 @@
 ---
 title: "Git: Correcting mistakes (stashing)"
 date: "2020-12-04"
-description: Git is daunting when you get started with it. You tend to face a fear of messing up like never before. This blog series will help you fight that fear.
+description: Do you find git daunting when you have to run any command other than the common ones? Do you face a fear of messing up like never before? This blog series will help you fight that fear.
 ---
 
-Git is daunting when you get started with it. You tend to face a fear of messing up like never before. This blog series will help you fight that fear.
+Do you find git daunting when you have to run any command other than the common ones? Do you face a fear of messing up like never before? This blog series will help you fight that fear.
 
 ![image](https://imgs.xkcd.com/comics/git.png)
 
-When we go wrong, we follow the procedure mentioned in the meme. Save our work and download a fresh copy. While this is a good "jugaad" (hack), it becomes tedious, and of course, there is a better solution.
+When we go wrong, we follow the steps mentioned in the meme, which include saving our work and downloading a fresh copy. 🙃 While this seems like a good "jugaad" (hack), it becomes tedious. However, there is always a better solution.
 
-Let's start with a simple command which will be useful in some scenarios.
+Let's start with a simple command which will be useful in some such scenarios.
 
 ### Stash
 
 A glance at what the [Pro Git](https://git-scm.com/book/en/v2) book written by Scott Chacon and Ben Straub says
 
 > Stashing takes the dirty state of your working directory — that is, your modified tracked files and staged
-> changes — and saves it on a stack of unfinished changes that you can reapply at any time (even on a different > branch).
+> changes — and saves it on a stack of unfinished changes that you can reapply at any time (even on a different branch).
 
-Right. Okay. So what does this mean? 🤔
+Right..... Okay...... But, what does this mean? 🤔
 
-Well, a real-world analogy would help here.
+Well, a real-world analogy would be helpful here.
 
 Think of stashing as placing all your valuable changes safely in a box.
-When filling a box, you'll add new items on top. Similarly, changes of subsequent stashes get added on top like a stack.
+When filling a box, you add new items on top of each other. Similarly, changes of subsequent stashes get added on top like a stack.
 
 ![image](https://media1.giphy.com/media/YhlZFaFx04fYY/giphy.gif)
 
@@ -32,9 +32,9 @@ We tend to cram stuff when packing.🙂 However, everything in a stash is neatly
 
 Cool. Right? 🤩
 
-Let's look at the commands in action. I urge you to try these out on a local repo to get a better understanding. Except for git, no installations are necessary.
+Let's look at the commands in action. I urge you to try these out on a local repo to get a better understanding. Except for [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), no installations are necessary.
 
-1. Create a folder. And a demo file with some initial text.
+1. Create a folder. And a file with some initial text.
 2. Open git bash or terminal in that folder and run `git init` in the folder to initialize a git repository.
 3. Add and commit changes.
 
@@ -70,3 +70,9 @@ Let's look at the commands in action. I urge you to try these out on a local rep
     <img src="stash-7.png" alt="screenshot of new steps">
 
 **Note:** Index can be specified as `stash@{1}` with `apply` and `drop`. By default, they operate on the most recent stash present on the top.
+
+Stashing acts as a lifeline when we need changes in the future. A few cases are listed :
+
+- Imagine that, to work on a feature for a project, you clone the repository and create your branch and start working. Somebody else's PR gets accepted and merged having code useful for you too. Now what? Stash your current changes, fetch the new changes from the remote, and finally apply the stashed content.
+- Another such scenario is when you forget some change on your old commit and already start working on a new one. Complete the work on the previous commit by stashing changes for later.
+- Let's suppose you are working on branch A. You commit your work and move on to making changes for another branch B. But, then realize that you forgot to switch to branch B in your excitement. Stashing will solve the problem here.
