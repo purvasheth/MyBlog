@@ -1,7 +1,7 @@
 ---
-title: "Git: Correcting mistakes (stashing)"
+title: "Git: Correcting mistakes 1 (stashing)"
 date: "2020-12-04"
-description: Do you find git daunting when you have to run any command other than the common ones? Do you face a fear of messing up like never before? This blog series will help you fight that fear.
+description: Do you find git daunting when you have to run any command other than the common ones? Do you face a fear of messing up like never before? This blog series will help you fight that fear. This blog covers 'stash'.
 ---
 
 Do you find git daunting when you have to run any command other than the common ones? Do you face a fear of messing up like never before? This blog series will help you fight that fear.
